@@ -16,7 +16,7 @@ class App {
   // routing
   setup() {
     this.app.get("/", (request, reply) => {
-      reply.send({ hello: "guys" });
+      reply.send({ hello: "guy" });
     });
   }
 
@@ -24,7 +24,8 @@ class App {
   start() {
     try {
       this.app.listen(PORT);
-      this.app.log.info(`http://localhost:${PORT}`);
+      // fastify 가 알아서 주소를 출력해주므로 굳이 주소 찍을 필요 없다
+      // this.app.log.info(`http://localhost:${PORT}`);
     } catch (error) {
       this.app.log.error(error);
     }

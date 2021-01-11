@@ -3,5 +3,7 @@
 fastify boilerplate  
 
 - [x] typescript  
-- [ ] typeORM(mysql)  
-- [ ] reflect-metadata  
+- [x] typeORM(mysql)  
+- [x] reflect-metadata  https://www.npmjs.com/package/reflect-metadata  
+- [x] pino-pretty  
+
